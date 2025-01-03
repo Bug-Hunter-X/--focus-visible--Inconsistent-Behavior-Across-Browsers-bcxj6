@@ -1,0 +1,9 @@
+The CSS rule `:focus-visible` is not supported in older browsers.  This can lead to unexpected behavior or no styling at all for focused elements in those browsers.  For example, consider the following code:
+
+```css
+a:focus-visible {
+  outline: 2px solid blue;
+}
+```
+
+In modern browsers, only elements that truly need visual focus indicators (i.e., not those focused programmatically) will get the blue outline. However, older browsers lack this functionality, making the styling unpredictable.
