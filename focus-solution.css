@@ -1,0 +1,15 @@
+To address the browser compatibility issue with `:focus-visible`, use feature detection and provide fallback styles.  One approach is to use a JavaScript polyfill or leverage a CSS-only solution. Here is the CSS-only approach:
+
+```css
+/* Fallback styles for older browsers */
+a:focus {
+  outline: 2px solid blue;
+}
+
+/* Modern browsers will prioritize :focus-visible */
+a:focus-visible {
+  outline: 2px solid blue;
+}
+```
+
+This ensures that all browsers style focused elements, while modern browsers use the more refined `:focus-visible` behavior.
